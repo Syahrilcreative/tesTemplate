@@ -186,96 +186,69 @@
             <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <div class="card-body" style="border:1px solid white;">
-                                <h4 class="card-title text-center">Form Team</h4>
-                                <form action="" method="post">
-                                    <div class="form-group">
-                                        <label for="name">Name Team</label>
-                                        <input type="text" name="" id="" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Region</label>
-                                        <select name="" id="" class="form-control">
-                                            <option value="">Choose Region</option>
-                                            <option value="">Jakarta</option>
-                                            <option value="">Bandung</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Logo</label>
-                                        <input type="file" name="" id="" class="form-control">
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                        <button type="button" class="btn btn-primary">Save</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
-                        <div class="col-md-12 mb-2">
-                            <!-- <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModal">
-                                Create Team
-                            </button> -->
-                            <!-- <a href="formUser.html" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a> -->
-                        </div>
-                    </div>
-                    <table class="table table-border table-striped" style="border: 1px solid white; color: white;">
-                        <thead>
-                            <tr>
-                                <th>Logo</th>
-                                <th>Nama Team</th>
-                                <th>Region</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
-                                </td>
-                                <td>RRQ E-sport</td>
-                                <td>Jakarta</td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <a href="formUser.html" class="btn btn-sm btn-success"><i
-                                                class="fa-solid fa-edit text-white"></i></a>
-                                        <a href="" class="btn btn-sm btn-danger"><i
-                                                class="fa-solid fa-trash text-white"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- <div class="row">
                         <div class="col-md-6 grid-margin stretch-card">
-                            <div class="card">
+                            <div class="card" style="border-color:white;">
+                                <div class="card-header">
+                                    <h4 class="card-title text-center">Jadwal Pertandingan</h4>
+                                </div>
                                 <div class="card-body">
-                                    <h4 class="card-title">Form Team</h4>
                                     <form class="forms-sample">
-                                        <div class="form-group">
-                                            <label for="nik">NIK</label>
-                                            <input type="text" class="form-control" id="nik" placeholder="Masukan NIK">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="nik">Nama Turnamen</label>
+                                                    <input type="text" class="form-control" id="nik"
+                                                        placeholder="Piala Presiden">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nik">Kategori Game</label>
+                                                    <input type="text" class="form-control" id="nik"
+                                                        placeholder="Mobile Legend">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nama">Lokasi Pertandingan</label>
+                                                    <input type="text" class="form-control" id="nama"
+                                                        placeholder="Gedung A">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nama">Jam Pertandingan</label>
+                                                    <input type="text" class="form-control" id="nama"
+                                                        placeholder="13:00">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="nama">Tanggal Pertandingan</label>
+                                                    <input type="text" class="form-control" id="nama"
+                                                        placeholder="19-06-2022">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nama">Status</label>
+                                                    <input type="text" class="form-control" id="nama"
+                                                        placeholder="Registred">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nama">Bukti Pembayaran Registrasi</label>
+                                                    <input type="file" required class="form-control" id="nama"
+                                                        placeholder="Registred">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="nama">Keterangan</label>
+                                                    <input type="text" class="form-control" id="nama"
+                                                        placeholder="Playing">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="nama">nama</label>
-                                            <input type="text" class="form-control" id="nama"
-                                                placeholder="Masukan Nama">
+                                        <div class="d-flex justify-content-end">
+                                            <button class="btn btn-primary">simpan</button>
+                                            <button class="btn btn-danger">Resign</button>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="image">Upload KTP</label>
-                                            <input type="file" class="form-control" id="image" placeholder="Upload KTP">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                        <button class="btn btn-dark">Cancel</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
@@ -294,47 +267,6 @@
         </div>
         <!-- page-body-wrapper ends -->
     </div>
-
-
-    <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Create Team</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post">
-                        <div class="form-group">
-                            <label for="name">Name Team</label>
-                            <input type="text" name="" id="" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Region</label>
-                            <select name="" id="" class="form-control">
-                                <option value="">Choose Region</option>
-                                <option value="">Jakarta</option>
-                                <option value="">Bandung</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Logo</label>
-                            <input type="file" name="" id="" class="form-control">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>

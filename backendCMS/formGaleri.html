@@ -22,33 +22,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
-
-    <!-- Datatable -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <style>
-        #example_wrapper {
-            width: 100%;
-        }
-
-        #example_length {
+        form {
             color: white;
-        }
-
-        #example_info {
-            color: white;
-        }
-
-        .dataTables_wrapper .dataTables_length select {
-            color: black;
-            background-color: white;
         }
     </style>
 </head>
@@ -72,7 +48,7 @@
                                 <span class="count bg-success"></span>
                             </div>
                             <div class="profile-name">
-                                <h5 class="mb-0 font-weight-normal text-white">Henry Klein</h5>
+                                <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
                                 <span>Gold Member</span>
                             </div>
                         </div>
@@ -252,51 +228,24 @@
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row">
-                        <div class="col-md-12 mb-2">
-                            <a href="formArtikel.html" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 grid-margin stretch-card">
-                            <table id="example" class="table table-bordered"
-                                style="width:100%; border-color: white; color: white;">
-                                <thead class="text-white" style="font-weight: 500;">
-                                    <tr>
-                                        <th>Image</th>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-
-                                        <td>
-                                            <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg"
-                                                alt="">
-                                        </td>
-                                        <td>Juara Dunia Turun Tangan</td>
-                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.....</td>
-                                        <td class="text-center">
-                                            <div class="btn-group">
-                                                <a href="formUser.html" class="btn btn-sm btn-success"><i
-                                                        class="fa-solid fa-edit text-white"></i></a>
-                                                <a href="" class="btn btn-sm btn-danger"><i
-                                                        class="fa-solid fa-trash text-white"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Image</th>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                        <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Form Galeri</h4>
+                                    <!-- <p class="card-description"> Basic form layout </p> -->
+                                    <form class="forms-sample">
+                                        <div class="form-group">
+                                            <label for="teamSatu">Gambar</label>
+                                            <input type="file" name="" id="" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="teamSatu">nama</label>
+                                            <input type="text" name="" id="" class="form-control">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,8 +270,6 @@
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
-
-
     <!-- Plugin js for this page -->
     <script src="assets/vendors/chart.js/Chart.min.js"></script>
     <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
@@ -337,20 +284,9 @@
     <script src="assets/js/settings.js"></script>
     <script src="assets/js/todolist.js"></script>
     <!-- endinject -->
-    <!-- Jquery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
     <!-- Custom js for this page -->
     <script src="assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable();
-        });
-    </script>
 </body>
 
 </html>
